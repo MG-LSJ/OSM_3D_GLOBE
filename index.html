@@ -27,7 +27,7 @@
 
     <script>
         const basemapEnum = "OSM:Standard";
-        const ARCGISapikey = "ARCGIS_API_KEY"
+        const ARCGISapikey = "ARCGIS_API_KEY" // <-- replace with your own
         // Get ESRI ARCGIS api key at https://developers.arcgis.com/sign-up/
 
         const osmStyle = `https://basemaps-api.arcgis.com/arcgis/rest/services/styles/${basemapEnum}?type=style&token=${ARCGISapikey}`;
@@ -35,7 +35,7 @@
         // TO MAKE THE MAP APPEAR YOU MUST
         // ADD YOUR ACCESS TOKEN FROM
         // https://account.mapbox.com
-        mapboxgl.accessToken = "MAPBOX_ACCESS_TOKEN";
+        mapboxgl.accessToken = "MAPBOX_ACCESS_TOKEN"; // <-- replace with your own
         const map = new mapboxgl.Map({
             container: 'map',
             style: osmStyle,//'mapbox://styles/mapbox/satellite-streets-v11',
